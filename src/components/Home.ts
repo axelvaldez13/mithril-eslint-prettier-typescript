@@ -14,17 +14,20 @@ const dataContent: Attrs = {
 const Home: m.Component = {
   view: () =>
     m(
-      '.bg-gray-50.h-full.flex.justify-center.items-center.text-center',
-      m('.max-w-2xl.mx-auto.py-12.px-4.sm:px-6.lg:py-16.lg:px-8', [
-        m(
-          'h1.text-3xl.font-extrabold.tracking-tight.text-gray-900.sm:text-4xl',
-          [m('span.block', dataContent.title)]
-        ),
-        m(
-          'h3.text-3xl.block.text-indigo-600.font-extrabold.mt-3',
-          dataContent.subtitle
-        )
-      ])
+      '.bg-gray-100.h-full.flex.justify-center.items-center.text-center',
+      m(
+        '.max-w-2xl.min-h-full.h-full.mx-auto.py-12.px-4.sm:px-6.lg:py-16.lg:px-8.flex.flex-col.justify-center',
+        [
+          m(
+            'h1.text-3xl.font-extrabold.tracking-tight.text-gray-900.sm:text-4xl',
+            [m('span.block', dataContent.title)]
+          ),
+          m(
+            'h3.text-3xl.block.text-indigo-600.font-extrabold.mt-3',
+            dataContent.subtitle
+          )
+        ]
+      )
     )
 }
 

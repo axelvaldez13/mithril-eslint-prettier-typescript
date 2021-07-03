@@ -2322,7 +2322,7 @@ var dataContent = {
 };
 var Home = {
     view: function () {
-        return mithril_1.default('.bg-gray-50.h-full.flex.justify-center.items-center.text-center', mithril_1.default('.max-w-2xl.mx-auto.py-12.px-4.sm:px-6.lg:py-16.lg:px-8', [
+        return mithril_1.default('.bg-gray-100.h-full.flex.justify-center.items-center.text-center', mithril_1.default('.max-w-2xl.min-h-full.h-full.mx-auto.py-12.px-4.sm:px-6.lg:py-16.lg:px-8.flex.flex-col.justify-center', [
             mithril_1.default('h1.text-3xl.font-extrabold.tracking-tight.text-gray-900.sm:text-4xl', [mithril_1.default('span.block', dataContent.title)]),
             mithril_1.default('h3.text-3xl.block.text-indigo-600.font-extrabold.mt-3', dataContent.subtitle)
         ]));
